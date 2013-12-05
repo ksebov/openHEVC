@@ -35,10 +35,15 @@ SDL_Texture       *bmpTex1;
 uint8_t           *pixels1;
 int               pitch1, size1;
 int               ticksSDL;
+#else
+#include <time.h>
+clock_t           ticksSDL;
 #endif
 void Init_Time() {
 #ifndef SDL_NO_DISPLAY
     ticksSDL = SDL_GetTicks();
+#else
+    ticksSDL = clock();
 #endif
 }
 
@@ -88,5 +93,9 @@ void CloseSDLDisplay(){
 #endif
 }
 int SDL_GetTime() {
-    return 0;//TODONOW SDL_GetTicks() - ticksSDL;
+#ifndef SDL_NO_DISPLAY
+	return SDL_GetTicks() - ticksSDL;
+#else
+	return ( clock()- ticksSDL ) / (CLOCKS_PER_SEC/1000);
+#endif
 }
