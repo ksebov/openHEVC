@@ -66,7 +66,7 @@ int Init_SDL(int edge, int frame_width, int frame_height){
 
 void SDL_Display(int edge, int frame_width, int frame_height, unsigned char *Y, unsigned char *U, unsigned char *V){
 
-#ifndef SDL_NO_DISPLAY	
+#ifndef SDL_NO_DISPLAY
     size1 = (frame_width + 2 * edge) * frame_height;
 
     SDL_LockTexture(bmpTex1, NULL, (void **)&pixels1, &pitch1);
@@ -88,5 +88,5 @@ void CloseSDLDisplay(){
 #endif
 }
 int SDL_GetTime() {
-    return SDL_GetTicks() - ticksSDL;
+    return 0;//TODONOW SDL_GetTicks() - ticksSDL;
 }
