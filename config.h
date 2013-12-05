@@ -191,7 +191,7 @@
 #define HAVE_DXVA_H 0
 #define HAVE_EBP_AVAILABLE 1
 #define HAVE_EBX_AVAILABLE 1
-#define HAVE_FAST_64BIT 1
+#define HAVE_FAST_64BIT 0
 #define HAVE_FAST_CLZ 1
 #define HAVE_FAST_CMOV 1
 #define HAVE_FCNTL 1
