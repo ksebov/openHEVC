@@ -159,9 +159,17 @@ void ff_hevc_dsp_init(HEVCDSPContext *hevcdsp, int bit_depth)
     hevcdsp->put_unweighted_pred   = FUNC(put_unweighted_pred, depth);      \
     hevcdsp->put_weighted_pred_avg = FUNC(put_weighted_pred_avg, depth);    \
                                                                             \
+    hevcdsp->put_hevc_epel[0][0] = FUNC(put_hevc_epel_pixels, depth);       \
+    hevcdsp->put_hevc_epel[0][1] = FUNC(put_hevc_epel_h, depth);            \
+    hevcdsp->put_hevc_epel[1][0] = FUNC(put_hevc_epel_v, depth);            \
+    hevcdsp->put_hevc_epel[1][1] = FUNC(put_hevc_epel_hv, depth);           \
+                                                                            \
+    hevcdsp->put_unweighted_pred   = FUNC(put_unweighted_pred, depth);      \
+    hevcdsp->put_weighted_pred_avg = FUNC(put_weighted_pred_avg, depth);    \
+                                                                            \
     hevcdsp->weighted_pred         = FUNC(weighted_pred, depth);            \
     hevcdsp->weighted_pred_avg     = FUNC(weighted_pred_avg, depth);        \
-                                                                            \
+                                                                                                                                                    \
     hevcdsp->hevc_h_loop_filter_luma     = FUNC(hevc_h_loop_filter_luma, depth);   \
     hevcdsp->hevc_v_loop_filter_luma     = FUNC(hevc_v_loop_filter_luma, depth);   \
     hevcdsp->hevc_h_loop_filter_chroma   = FUNC(hevc_h_loop_filter_chroma, depth); \
@@ -182,7 +190,7 @@ void ff_hevc_dsp_init(HEVCDSPContext *hevcdsp, int bit_depth)
         HEVC_DSP(8);
         break;
     }
-    
+
 #ifdef SVC_EXTENSION
 #define HEVC_DSP_UP(depth)                                                 \
     hevcdsp->upsample_base_layer_frame   = FUNC(upsample_base_layer_frame, depth); \
@@ -193,10 +201,10 @@ void ff_hevc_dsp_init(HEVCDSPContext *hevcdsp, int bit_depth)
         HEVC_DSP_UP(9);
         break;
     case 10:
-        HEVC_DSP_UP(10);        
+        HEVC_DSP_UP(10);
         break;
     default:
-        HEVC_DSP_UP(8);        
+        HEVC_DSP_UP(8);
         break;
     }
 #endif
