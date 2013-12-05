@@ -1,8 +1,9 @@
 /build
 .svn
 .DS_Store
-.project
-.cproject
+.metadata
 /build_w32
 /build_w64
 /build_debug
+/ohevcbb/Device*
+/169.254.0.*

@@ -23,6 +23,9 @@
 #include <float.h>
 #include <limits.h>
 
+#undef FLT_MAX
+#define FLT_MAX         3.402823466e+38f
+
 #include "libavutil/opt.h"
 #include "avcodec.h"
 #include "version.h"

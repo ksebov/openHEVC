@@ -29,7 +29,7 @@
 #define SLIBSUF ".dylib"
 #define ARCH_AARCH64 0
 #define ARCH_ALPHA 0
-#define ARCH_ARM 0
+#define ARCH_ARM 1
 #define ARCH_AVR32 0
 #define ARCH_AVR32_AP 0
 #define ARCH_AVR32_UC 0
@@ -48,7 +48,7 @@
 #define ARCH_TILEGX 0
 #define ARCH_TILEPRO 0
 #define ARCH_TOMI 0
-#define ARCH_X86 1
+#define ARCH_X86 0
 #ifdef X86_32
 #define ARCH_X86_32 1
 #define ARCH_X86_64 0

@@ -33,7 +33,7 @@
 #include "config.h"
 
 #if   ARCH_ARM
-#   include "arm/timer.h"
+//#   include "arm/timer.h"
 #elif ARCH_BFIN
 #   include "bfin/timer.h"
 #elif ARCH_PPC
