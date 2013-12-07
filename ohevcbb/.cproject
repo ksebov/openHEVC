@@ -30,8 +30,8 @@
 								<option id="com.qnx.qcc.option.compile.debug.654966043" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.2086326352" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1165174159" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1826834290" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
@@ -87,14 +87,16 @@
 							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1669104060" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
 							<builder buildPath="${workspace_loc:/ohevcbb}/Device-Release" id="com.qnx.nto.2032220883" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.qnx.nto"/>
 							<tool id="com.qnx.qcc.tool.compiler.1922740445" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
-								<option id="com.qnx.qcc.option.compiler.optlevel.1176123281" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.2" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compiler.optlevel.1176123281" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.3" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.822379829" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1693499661" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1872360209" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.pie.1788772646" name="Position Independent Executable (-fPIE)" superClass="com.qnx.qcc.option.compiler.pie" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.qccoptions.97572238" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
@@ -152,11 +154,13 @@
 								<option id="com.qnx.qcc.option.compiler.profile2.1425466297" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.442131441" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1078563511" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.226453212" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.2326729" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -212,11 +216,13 @@
 								<option id="com.qnx.qcc.option.compiler.coverage.1874634024" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.772139966" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1845483141" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.76309221" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.805127645" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -270,11 +276,13 @@
 								<option id="com.qnx.qcc.option.compile.debug.2136498726" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.721034577" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.542259496" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.2126890428" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.2119307158" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -328,11 +336,13 @@
 								<option id="com.qnx.qcc.option.compiler.profile2.466981642" name="Build for Profiling (Function Instrumentation) (-finstrument-functions)" superClass="com.qnx.qcc.option.compiler.profile2" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1949725477" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1960527044" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.545857702" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1902322477" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -387,11 +397,13 @@
 								<option id="com.qnx.qcc.option.compiler.coverage.84282261" name="Build for Code Coverage (-Wc,-ftest-coverage -Wc,-fprofile-arcs)" superClass="com.qnx.qcc.option.compiler.coverage" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1453088130" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
 									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
-									<listOptionValue builtIn="false" value="E:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
 								</option>
 								<option id="com.qnx.qcc.option.compiler.security.1524550113" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.compiler.defines.1339733410" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.327736726" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
@@ -414,6 +426,71 @@
 								</inputType>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.205099304" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.qnx.qcc.configuration.exe.release.504101640.139741292">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.qnx.qcc.configuration.exe.release.504101640.139741292" moduleId="org.eclipse.cdt.core.settings" name="Device-Stage">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.qnx.tools.ide.qde.core.QDEBynaryParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.qnx.tools.ide.qde.core.QDELinkerErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" description="Full optimization with debug" id="com.qnx.qcc.configuration.exe.release.504101640.139741292" name="Device-Stage" parent="com.qnx.qcc.configuration.exe.release">
+					<folderInfo id="com.qnx.qcc.configuration.exe.release.504101640.139741292." name="/" resourcePath="">
+						<toolChain id="com.qnx.qcc.toolChain.1015487936" name="QNX QCC" superClass="com.qnx.qcc.toolChain">
+							<option id="com.qnx.qcc.option.cpu.1464277410" name="Target CPU:" superClass="com.qnx.qcc.option.cpu" value="com.qnx.qcc.option.gen.cpu.armle-v7" valueType="enumerated"/>
+							<option id="com.qnx.qcc.option.runtime.24117425" name="Runtime:" superClass="com.qnx.qcc.option.runtime" value="com.qnx.qcc.option.gen.runtime.c++._gpp" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="com.qnx.tools.ide.qde.core.QDEBynaryParser" id="com.qnx.qcc.targetPlatform.1620380018" osList="all" superClass="com.qnx.qcc.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/ohevcbb}/Device-Release" id="com.qnx.nto.1365206451" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.qnx.nto"/>
+							<tool id="com.qnx.qcc.tool.compiler.709916092" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
+								<option id="com.qnx.qcc.option.compiler.optlevel.1340749942" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.3" valueType="enumerated"/>
+								<option id="com.qnx.qcc.option.compiler.includePath.1185270545" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC/gpac/modules/openhevc_dec"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.security.1919524658" name="Enhanced Security (-fstack-protector-strong)" superClass="com.qnx.qcc.option.compiler.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.defines.1766226388" name="Defines (-D)" superClass="com.qnx.qcc.option.compiler.defines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
+									<listOptionValue builtIn="false" value="SDL_NO_DISPLAY"/>
+								</option>
+								<option id="com.qnx.qcc.option.compiler.pie.2077988716" name="Position Independent Executable (-fPIE)" superClass="com.qnx.qcc.option.compiler.pie" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.compiler.qccoptions.1601366232" name="QCC Options" superClass="com.qnx.qcc.option.compiler.qccoptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-frecord-gcc-switches"/>
+								</option>
+								<option id="com.qnx.qcc.option.compile.debug.620170195" name="Debug (-g)" superClass="com.qnx.qcc.option.compile.debug" value="true" valueType="boolean"/>
+								<inputType id="com.qnx.qcc.inputType.compiler.639198674" superClass="com.qnx.qcc.inputType.compiler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.assembler.333451196" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.debug.210266283" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<inputType id="com.qnx.qcc.inputType.assembler.1500575293" superClass="com.qnx.qcc.inputType.assembler"/>
+							</tool>
+							<tool id="com.qnx.qcc.tool.linker.1751767950" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
+								<option id="com.qnx.qcc.option.linker.langcpp.1254536069" name="C++ (-lang-c++)" superClass="com.qnx.qcc.option.linker.langcpp" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.660606215" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/lib"/>
+									<listOptionValue builtIn="false" value="${QNX_TARGET}/../target-override/${CPUVARDIR}/usr/lib"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.pie.103866924" name="Position Independent Executable (-pie)" superClass="com.qnx.qcc.option.linker.pie" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.security.1513988429" name="Enhanced Security (-Wl,-z,relro -Wl,-z,now)" superClass="com.qnx.qcc.option.linker.security" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.linker.debug.1346467491" name="Debug (-g)" superClass="com.qnx.qcc.option.linker.debug" value="true" valueType="boolean"/>
+								<inputType id="com.qnx.qcc.inputType.linker.2038268812" superClass="com.qnx.qcc.inputType.linker">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.qnx.qcc.tool.archiver.1339801480" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>

@@ -76,6 +76,10 @@
        <platformArchitecture>x86</platformArchitecture>
        <asset path="Simulator-Coverage/ohevcbb" entry="true" type="Qnx/Elf">ohevcbb</asset>
     </configuration>
+    <configuration name="Device-Stage">
+       <platformArchitecture>armle-v7</platformArchitecture>
+       <asset path="Device-Stage/ohevcbb" entry="true" type="Qnx/Elf">lib/ohevcbb</asset>
+    </configuration>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
