@@ -59,7 +59,7 @@
 #define HAVE_ARMV5TE 0
 #define HAVE_ARMV6 0
 #define HAVE_ARMV6T2 0
-#define HAVE_NEON 0
+#define HAVE_NEON 1
 #define HAVE_VFP 0
 #define HAVE_VFPV3 0
 #define HAVE_AMD3DNOW 1

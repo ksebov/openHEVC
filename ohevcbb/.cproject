@@ -43,8 +43,7 @@
 							<tool id="com.qnx.qcc.tool.assembler.1792221395" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.480370332" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
 								<option id="com.qnx.qcc.option.assembler.includePath.1416361777" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
-									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/qnx6/usr/include/freetype2"/>
-									<listOptionValue builtIn="false" value="C:/bbndk/target_10_2_0_1155/target-override/usr/include"/>
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
 								</option>
 								<option id="com.qnx.qcc.option.assembler.defines.973513798" name="Defines (-D)" superClass="com.qnx.qcc.option.assembler.defines" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="_FORTIFY_SOURCE=2"/>
@@ -105,6 +104,9 @@
 								<inputType id="com.qnx.qcc.inputType.compiler.261228441" superClass="com.qnx.qcc.inputType.compiler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.875047642" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
+								<option id="com.qnx.qcc.option.assembler.includePath.1939446785" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1262184348" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.602662261" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -166,6 +168,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.220161236" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1831226052" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.353801956" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.454357069" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.40731628" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -228,6 +233,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.1824079003" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.369775658" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1403427108" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.198607970" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.489335627" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -288,6 +296,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.822007827" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.664024565" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.37014834" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.899590381" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.777160754" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -348,6 +359,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.232167849" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1893466479" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1624824438" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1107508273" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.552107175" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -409,6 +423,9 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.2021734710" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.1348352706" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.800189212" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.793619910" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1861477708" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
@@ -474,6 +491,13 @@
 							</tool>
 							<tool id="com.qnx.qcc.tool.assembler.333451196" name="QCC Assembler" superClass="com.qnx.qcc.tool.assembler">
 								<option id="com.qnx.qcc.option.assembler.debug.210266283" name="Debug (-g)" superClass="com.qnx.qcc.option.assembler.debug" value="true" valueType="boolean"/>
+								<option id="com.qnx.qcc.option.assembler.includePath.1586994196" name="Include Directories (-I)" superClass="com.qnx.qcc.option.assembler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="e:/_dev/openHEVC"/>
+								</option>
+								<option id="com.qnx.qcc.option.assembler.asoptions.556025512" name="Assembler Options (-Wa,)" superClass="com.qnx.qcc.option.assembler.asoptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-mfpu=neon"/>
+									<listOptionValue builtIn="false" value="-mimplicit-it=thumb"/>
+								</option>
 								<inputType id="com.qnx.qcc.inputType.assembler.1500575293" superClass="com.qnx.qcc.inputType.assembler"/>
 							</tool>
 							<tool id="com.qnx.qcc.tool.linker.1751767950" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">

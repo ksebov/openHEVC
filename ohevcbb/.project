@@ -162,6 +162,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/libavcodec/hevcdsp.c</locationURI>
 		</link>
 		<link>
+			<name>libavcodec/hevcdsp.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/libavcodec/hevcdsp.h</locationURI>
+		</link>
+		<link>
 			<name>libavcodec/hevcpred.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/libavcodec/hevcpred.c</locationURI>
@@ -427,6 +432,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/libavformat/utils.c</locationURI>
 		</link>
 		<link>
+			<name>libavutils/arm</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>libavutils/atomic.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/libavutil/atomic.c</locationURI>
@@ -490,6 +500,11 @@
 			<name>libavutils/cpu.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/libavutil/cpu.h</locationURI>
+		</link>
+		<link>
+			<name>libavutils/cpu_internal.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/libavutil/cpu_internal.h</locationURI>
 		</link>
 		<link>
 			<name>libavutils/crc.c</name>
@@ -695,6 +710,20 @@
 			<name>main_hm/sdl2.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/main_hm/sdl2.c</locationURI>
+		</link>
+			<name>libavcodec/arm/hevcdsp_init_arm.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/libavcodec/arm/hevcdsp_init_arm.c</locationURI>
+		</link>
+		<link>
+			<name>libavutils/arm/cpu.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/libavutil/arm/cpu.c</locationURI>
+		</link>
+		<link>
+			<name>libavutils/arm/cpu.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/libavutil/arm/cpu.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
