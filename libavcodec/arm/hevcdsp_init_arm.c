@@ -24,13 +24,39 @@
 #include "libavutil/arm/cpu.h"
 #include "libavcodec/hevcdsp.h"
 
+void _hevc_v_deblock_luma_8_neon( const uint8_t* ptr, uint32_t stride, int32_t beta_tc_flags );
+void _hevc_h_deblock_luma_8_neon( const uint8_t* ptr, uint32_t stride, int32_t beta_tc_flags );
+
+static inline int32_t beta_tc_flags( const int *_beta, const int *_tc, const uint8_t *_no_p, const uint8_t *_no_q)
+{
+    return (*_beta << 13) | (*_tc << 4) | (*_no_q << 1) | (*_no_p << 0); // Note: Assembly code in hevc_deblock_neon.S depends on this packing.
+}
+
+void hevc_h_deblock_luma_8_neon(uint8_t *_pix, ptrdiff_t _stride, int *_beta, int *_tc, uint8_t *_no_p, uint8_t *_no_q)
+{
+    _hevc_h_deblock_luma_8_neon( _pix, _stride, beta_tc_flags( _beta, _tc, _no_p, _no_q ));
+    ++_beta; ++_tc; ++_no_p; ++_no_q; _pix += 4;
+
+    _hevc_h_deblock_luma_8_neon( _pix, _stride, beta_tc_flags( _beta, _tc, _no_p, _no_q ));
+}
+
+void hevc_v_deblock_luma_8_neon(uint8_t *_pix, ptrdiff_t _stride, int *_beta, int *_tc, uint8_t *_no_p, uint8_t *_no_q)
+{
+    _hevc_v_deblock_luma_8_neon( _pix, _stride, beta_tc_flags( _beta, _tc, _no_p, _no_q ));
+    ++_beta; ++_tc; ++_no_p; ++_no_q; _pix += 4*_stride;
+
+    _hevc_v_deblock_luma_8_neon( _pix, _stride, beta_tc_flags( _beta, _tc, _no_p, _no_q ));
+}
+
 
 static av_cold void hevcdsp_init_neon(HEVCDSPContext *c, const int bit_depth)
 {
 #if  HAVE_NEON
     if (bit_depth == 8) {
-//    c->hevc_h_loop_filter_luma      = 0;
-//    c->hevc_v_loop_filter_luma      = 0;
+    c->hevc_h_loop_filter_luma_c    =
+    c->hevc_h_loop_filter_luma      = hevc_h_deblock_luma_8_neon;
+    c->hevc_v_loop_filter_luma_c    =
+    c->hevc_v_loop_filter_luma      = hevc_v_deblock_luma_8_neon;
     }
 #endif // HAVE_NEON
 }

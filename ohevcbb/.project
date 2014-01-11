@@ -711,6 +711,12 @@
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/main_hm/sdl2.c</locationURI>
 		</link>
+		<link>
+			<name>libavcodec/arm/hevc_deblock_neon.S</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/libavcodec/arm/hevc_deblock_neon.S</locationURI>
+		</link>
+		<link>
 			<name>libavcodec/arm/hevcdsp_init_arm.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/libavcodec/arm/hevcdsp_init_arm.c</locationURI>
